@@ -1,0 +1,59 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run Uvicorn Server",
+			"type": "shell",
+			"command": "${command:python.interpreterPath} -m uvicorn",
+			"args": [
+				"backend.app:app",
+				"--host",
+				"0.0.0.0",
+				"--port",
+				"8000",
+				"--reload"
+			],
+			"isBackground": true,
+			"problemMatcher": [
+				"$uvicorn"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Run Uvicorn Server",
+			"type": "shell",
+			"command": "${command:python.interpreterPath} -m uvicorn",
+			"args": [
+				"backend.app:app",
+				"--host",
+				"0.0.0.0",
+				"--port",
+				"8000",
+				"--reload"
+			],
+			"isBackground": true,
+			"problemMatcher": [
+				"$uvicorn"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Run Uvicorn Server",
+			"type": "shell",
+			"command": "${command:python.interpreterPath} -m uvicorn",
+			"args": [
+				"backend.app:app",
+				"--host",
+				"0.0.0.0",
+				"--port",
+				"8000",
+				"--reload"
+			],
+			"isBackground": true,
+			"problemMatcher": [
+				"$uvicorn"
+			],
+			"group": "build"
+		}
+	]
+}

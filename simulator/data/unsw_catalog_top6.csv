@@ -1,0 +1,19 @@
+label,srcip,dstip,sport,dport,proto,service,state,duration,sbytes,dbytes,stcpb,dtcpb,spkts,dpkts,trans_depth,sload,dload,smean,dmean,sttl,dttl,sinpkt,dinpkt,sjit,djit,attack_id,synthetic
+Exploits,,, ,80,TCP,http,ESTABLISHED,1.2,300,120,200,50,6,4,2,0.5,0.2,50,30,64,64,1,0,0.0,0.0,exA1,True
+Exploits,,, ,443,TCP,https,ESTABLISHED,0.8,150,40,350,10,4,2,1,0.3,0.1,40,20,64,64,1,0,0.0,0.0,exB1,True
+Exploits,,, ,8080,TCP,http-alt,ESTABLISHED,2.0,400,200,120,80,8,6,2,1.0,0.8,100,60,64,64,1,0,0.0,0.0,exC1,True
+DoS,,, ,80,TCP,http,UNKNOWN,120.0,200000,50000,0,0,20000,1000,1,50000,40000,2500,2000,64,64,0,0,0.0,0.0,doA1,True
+DoS,,, ,0,TCP,none,UNKNOWN,60.0,500000,1000,0,0,30000,10,1,100000,1000,3000,10,64,64,0,0,0.0,0.0,doB1,True
+DoS,,, ,53,UDP,dns,UNKNOWN,30.0,100000,50000,0,0,10000,2000,1,50000,20000,500,200,64,64,0,0,0.0,0.0,doC1,True
+Reconnaissance,,, ,22,TCP,ssh,SYN_SENT,0.2,60,0,0,0,2,0,1,0.1,0.0,30,0,64,64,1,0,0.0,0.0,reA1,True
+Reconnaissance,,, ,80,TCP,http,SYN_SENT,0.05,120,0,0,0,1,0,1,0.02,0.0,10,0,64,64,1,0,0.0,0.0,reB1,True
+Reconnaissance,,, ,443,TCP,https,SYN_SENT,0.1,90,0,0,0,1,0,1,0.05,0.0,20,0,64,64,1,0,0.0,0.0,reC1,True
+Backdoor,,, ,4567,TCP,backdoor,ESTABLISHED,600.0,200,150,50,20,50,45,4,5.0,4.0,4,3,64,64,1,0,0.0,0.0,bdA1,True
+Backdoor,,, ,9999,TCP,backdooor,ESTABLISHED,1800.0,100,80,10,10,30,28,3,1.0,0.8,2,1,64,64,1,0,0.0,0.0,bdB1,True
+Backdoor,,, ,4444,TCP,reverse,ESTABLISHED,300.0,500,400,100,100,40,35,3,2.0,1.5,10,9,64,64,1,0,0.0,0.0,bdC1,True
+Fuzzers,,, ,12345,UDP,unknown,UNKNOWN,2.0,1000,200,50,50,100,2,1,200,50,10,5,64,64,0,0,0.0,0.0,fuA1,True
+Fuzzers,,, ,80,TCP,http,UNKNOWN,5.0,3000,1000,500,200,500,20,1,1000,200,30,20,64,64,0,0,0.0,0.0,fuB1,True
+Fuzzers,,, ,3333,UDP,unknown,UNKNOWN,1.0,500,100,100,50,50,5,1,300,80,12,8,64,64,0,0,0.0,0.0,fuC1,True
+Worms,,, ,5555,UDP,unknown,UNKNOWN,0.1,60,10,0,0,3,1,1,20,5,20,3,64,64,1,0,0.0,0.0,woA1,True
+Worms,,, ,5555,UDP,unknown,UNKNOWN,0.05,40,5,0,0,5,1,1,10,2,10,2,64,64,1,0,0.0,0.0,woB1,True
+Worms,,, ,8080,TCP,http-alt,UNKNOWN,0.5,150,20,80,10,4,1,1,30,10,50,6,64,64,1,0,0.0,0.0,woC1,True

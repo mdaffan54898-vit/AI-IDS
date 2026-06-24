@@ -1,0 +1,23 @@
+{
+  "Exploits": {
+    "spkts": 292,
+    "sbytes": 98945,
+    "rate": 549.7900497825497,
+    "sinpkt": 1.4528881970944025,
+    "proto": "TCP"
+  },
+  "Backdoor": {
+    "spkts": 335,
+    "sbytes": 42695,
+    "rate": 725.51,
+    "sinpkt": 2.38,
+    "proto": "TCP"
+  },
+  "Fuzzers": {
+    "spkts": 1431,
+    "sbytes": 114350,
+    "rate": 2024.1,
+    "sinpkt": 6.05,
+    "proto": "UDP"
+  }
+}
